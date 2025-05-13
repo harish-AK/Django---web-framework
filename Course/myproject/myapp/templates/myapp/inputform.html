@@ -1,0 +1,11 @@
+<html>
+<head>
+</head>
+<title>Input Form</title>
+<form action="/myapp/getform/" method="POST">
+    {% csrf_token %}
+    <p>Name: <input type="text" name="name"></p>
+    <p>UserID :<input type="number" name="id"></p>
+    <input type="submit">
+</form>
+</html>
