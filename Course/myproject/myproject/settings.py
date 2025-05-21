@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "myapp",
+    "myapp.apps.MyappConfig",
+    "menuapp.apps.MenuappConfig",
 ]
 
 MIDDLEWARE = [
@@ -110,7 +111,7 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
-DEBUG = False
+DEBUG = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
