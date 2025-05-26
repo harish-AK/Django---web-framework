@@ -21,6 +21,6 @@ from . import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('myapp/',include("myapp.urls",namespace="myapp")),# This is the home page
-    # path('menuapp/',include("menuapp.urls",namespace="menuapp")),
+    path('menuapp/',include("menuapp.urls",namespace="menuapp")),
 ]
 handler404="myproject.views.handler404"
