@@ -44,3 +44,7 @@ def superheros(request,hero,hero_color=None):
         return HttpResponse(f"<h1>{hero}</h1> <h2>{items[hero]}</h2><h3>{color[hero]}</h3>")
     else:
         return HttpResponse(f"<h1>{hero}</h1> <h3>{items[hero]}</h3>")
+
+def hello_html(request,name):
+    context =  {"name":name}
+    return render(request,'myapp/hello.html',context)

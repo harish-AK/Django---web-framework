@@ -10,4 +10,5 @@ urlpatterns = [
     # path("superheros/<str:hero>",views.superheros,name="superheros"),
     # path("superheros/<str:hero>/<str:hero_color>",views.superheros,name="superheros"),
     re_path(r'^superheros/(?P<hero>[^/]+)(?:/(?P<hero_color>[^/]+))?/?$', views.superheros, name="superheros"),
+    path("hello/<str:name>",views.hello_html,name="hello_html"),
 ]
