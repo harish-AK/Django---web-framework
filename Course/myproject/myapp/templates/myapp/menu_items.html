@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Menu Items</h1>
+        {% for item in menu_items %}
+           <l1>{{item.dish_name}}</l1>
+           <l1>{{item.cuisine}}</l1>
+           <l1>{{item.price}}</l1>
+           <l1>{{item.hotel}}</l1>
+        {% endfor %}
+</body>
+</html>

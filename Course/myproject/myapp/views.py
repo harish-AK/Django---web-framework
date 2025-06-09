@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from menuapp.models import Menu,MenuCategory
 # Create your views here.
 
 def home(request):
@@ -48,3 +49,9 @@ def superheros(request,hero,hero_color=None):
 def hello_html(request,name):
     context =  {"name":name}
     return render(request,'myapp/hello.html',context)
+
+
+def dictview(request):
+    menu_items = Menu.objects.all()
+    context = {"menu_items":menu_items}
+    return render(request,"myapp/menu_items.html",context)
